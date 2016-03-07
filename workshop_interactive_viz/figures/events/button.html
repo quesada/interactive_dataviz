@@ -1,0 +1,13 @@
+
+<script src="button.js"></script>
+<div class="row" style="padding:20px">
+<label for="plotURL">Any Plotly graph URL</label>
+<input id="plotURL" style="padding:8px;width:400px" value="https://plot.ly/~dsr_plotly/24">
+<button onclick="newPlot()" class="button-primary">Go!</button>
+<br>
+<button onclick="changeType('contour')">Contour</button>
+<button onclick="changeType('heatmap')">Heatmap</button>
+<button onclick="changeType('surface')">Surface</button>
+</div>
+
+<iframe src="https://plot.ly/~dsr_plotly/24.embed" height=500 width="100%" id="plot" seamless frameborder=0></iframe>
